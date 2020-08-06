@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WD-PT-August2020</title>
+</head>
+<body>
+  <div class="flags-div">
+    <div class="flag" id="ocean-flag"></div>
+    <div class="flag" id="land-flag"></div>
+    <div class="flag" id="unity-flag"></div>
+  </div>
+  <h1 class="page-title">WD-PT-August2020</h1>
+  <h3 class="page-subtitle">Course Resources Index</h3>
+
+  <p>We are currently <strong><span id="completion-percent"></span></strong> percent done with the course.</p>
+
+  <h2>Zoom Rooms</h2>
+  <ul>
+    <li>Zach</li>
+    <li>Eli</li>
+    <li>Taylor</li>
+    <li>Seth</li>
+    <li>Isaiah</li>
+  </ul>
+
+  <h2>Office Hours Scheduling</h2>
+  <img src="https://www.appointletcdn.com/loader/buttons/8E44AD.png" data-appointlet-organization="etd"><script src="https://www.appointletcdn.com/loader/loader.min.js" async="" defer=""></script>
+  
+
+  <h2>Calendar</h2>
+  <ul>
+    <li><a href="https://docs.google.com/document/d/1qeZHKPn7_hsoKRWwiRMTnyb1UVfYbZ6mEEaji7HzYxA/edit?usp=sharing" target="_blank">Gold Badge</a></li>
+  </ul>
+
+
+
+
+  <h2>Information</h2>
+  <h3>Instructors</h3>
+  <ul>
+    <li>Zach Maynard</li>
+    <li>Eli T. Drumm</li>
+  </ul>
+  <h3>Learning Assistants</h3>
+  <ul>
+    <li>Taylor Dickens</li>
+    <li>Seth McLaughlin</li>
+    <li>Isaiah Murray</li>
+  </ul>
+  
+
+  <script>
+    const start = new Date(2020, 7, 10, 17, 30);
+    const end = new Date(2021, 1, 5, 18);
+    const now = new Date();
+
+    const complete = now > start ? ((now - start) / (end - start)) * 100 : 0;
+    document.getElementById('completion-percent').innerText = complete.toString();
+  </script>
+</body>
+</html>
