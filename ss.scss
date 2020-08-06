@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&family=Source+Code+Pro:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&family=Source+Code+Pro:ital,wght@0,700;1,700&display=swap');
 
 * {
   box-sizing: border-box;
@@ -7,9 +7,107 @@
 
 
 body {
+  margin: 0;
+
   font-family: 'Karla', sans-serif;
+  font-size: 16px;
 
   h1,h2,h3,h4,h5,h6 {
     font-family: 'Source Code Pro', monospace;
+  }
+
+
+  // thank you https://css-tricks.com/gradient-borders-in-css/
+  section {
+    // background-clip: padding-box;
+    // border: solid 5px transparent;
+
+    // &:before {
+    //   content: '';
+    //   // position: absolute;
+    //   // top: 0; right: 0; bottom: 0; left: 0;
+    //   z-index: -1;
+    //   margin: -5px;
+    //   background: linear-gradient(to right, black 40%, white 100%)
+    // }
+  }
+
+
+
+
+  ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+
+    li {
+      margin: 0.4rem;
+      padding: 0.4rem;
+
+      border-radius: 6px;
+    }
+  }
+}
+
+
+
+
+
+.flags-div {
+  width: 100%;
+  height: 40px;
+  display: flex;
+
+  .flag {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .ocean-flag {
+    width: 20%;
+    flex-grow: 0;
+    background-color: #a4c2f4;
+  }
+  
+  .land-flag {
+    width: 20%;
+    flex-grow: 0;
+    background-color: #b6d7a8;
+  }
+
+  .unity-flag {
+    flex-grow: 1;
+    background-color: #b4a7d6;
+  }
+}
+
+
+
+
+#main-div {
+  margin: 0 2rem;
+}
+
+h1.page-title {
+  font-size: 2.4rem;
+  margin: 1rem 0 0;
+}
+
+h3.page-subtitle {
+  font-size: 1.6rem;
+  margin: 0 0 1rem;
+  font-style: italic;
+}
+
+
+
+section#section-zoom {
+
+  li {
+
+    background-color: #0e71eb;
+    color: white;
   }
 }

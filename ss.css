@@ -1,13 +1,71 @@
-@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&family=Source+Code+Pro:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&family=Source+Code+Pro:ital,wght@0,700;1,700&display=swap");
 * {
   box-sizing: border-box;
 }
 
 body {
+  margin: 0;
   font-family: "Karla", sans-serif;
+  font-size: 16px;
 }
 body h1, body h2, body h3, body h4, body h5, body h6 {
   font-family: "Source Code Pro", monospace;
+}
+body ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+}
+body ul li {
+  margin: 0.4rem;
+  padding: 0.4rem;
+  border-radius: 6px;
+}
+
+.flags-div {
+  width: 100%;
+  height: 40px;
+  display: flex;
+}
+.flags-div .flag {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.flags-div .ocean-flag {
+  width: 20%;
+  flex-grow: 0;
+  background-color: #a4c2f4;
+}
+.flags-div .land-flag {
+  width: 20%;
+  flex-grow: 0;
+  background-color: #b6d7a8;
+}
+.flags-div .unity-flag {
+  flex-grow: 1;
+  background-color: #b4a7d6;
+}
+
+#main-div {
+  margin: 0 2rem;
+}
+
+h1.page-title {
+  font-size: 2.4rem;
+  margin: 1rem 0 0;
+}
+
+h3.page-subtitle {
+  font-size: 1.6rem;
+  margin: 0 0 1rem;
+  font-style: italic;
+}
+
+section#section-zoom li {
+  background-color: #0e71eb;
+  color: white;
 }
 
 /*# sourceMappingURL=ss.css.map */
