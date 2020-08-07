@@ -5,11 +5,17 @@
 
 body {
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   font-family: "Karla", sans-serif;
   font-size: 16px;
 }
 body h1, body h2, body h3, body h4, body h5, body h6 {
   font-family: "Source Code Pro", monospace;
+}
+body h3 {
+  margin: 1rem 0 0;
 }
 body div.split {
   margin: 0 0 0;
@@ -17,7 +23,7 @@ body div.split {
   width: 100%;
   height: 3px;
   border-radius: 10rem;
-  background: linear-gradient(to right, black 0%, #ddd 60%, white 100%);
+  background: linear-gradient(to right, #444 0%, #ddd 50%, white 90%);
 }
 body section {
   margin: 0 0 2rem;
@@ -28,6 +34,34 @@ body section h2 {
 }
 body section a {
   text-decoration: none;
+}
+body section li.gold-badge {
+  background-color: #f7cb4d;
+  color: black;
+}
+body section li.blue-badge {
+  background-color: #5b95f9;
+  color: white;
+}
+body section li.blue-badge.disabled {
+  background-color: #ccc;
+  color: #888;
+}
+body section li.red-badge {
+  background-color: #ea4335;
+  color: white;
+}
+body section li.red-badge.disabled {
+  background-color: #ccc;
+  color: #888;
+}
+body section li.link-efa {
+  background-color: #e33e42;
+  color: white;
+}
+body section li.inverse {
+  background-color: #444;
+  color: white;
 }
 body ul {
   margin: 0;
@@ -73,7 +107,7 @@ body ul li {
 
 h1.page-title {
   font-size: 2.4rem;
-  margin: 1rem 0 0;
+  margin: 0 0;
 }
 
 h3.page-subtitle {
@@ -88,20 +122,37 @@ section#section-zoom li {
 }
 
 section#office-hours img {
-  margin: 0.4rem;
+  margin: 0;
   padding: 0.4rem;
 }
 
-section#calendar li#calendar-gold {
-  background-color: #f7cb4d;
-  color: black;
-}
-section#calendar li#calendar-blue {
-  background-color: #5b95f9;
+section#resources .link#link-learning-gym {
+  background-color: #e33e42;
   color: white;
 }
-section#calendar li#calendar-red {
-  background-color: #ea4335;
+section#resources .link#link-quicksilver {
+  background-color: #333333;
+  color: white;
+}
+section#resources .link#link-faq {
+  background-color: #f9cb9c;
+  color: black;
+}
+
+#body-spacer {
+  flex-grow: 1;
+}
+
+footer {
+  flex-grow: 0;
+  width: 100%;
+  height: 60px;
+  padding: 0 1rem;
+  text-align: right;
+  background: linear-gradient(to right, white 0%, white 30%, #444 80%);
+  color: white;
+}
+footer a {
   color: white;
 }
 

@@ -8,12 +8,19 @@
 
 body {
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 
   font-family: 'Karla', sans-serif;
   font-size: 16px;
 
   h1,h2,h3,h4,h5,h6 {
     font-family: 'Source Code Pro', monospace;
+  }
+
+  h3 {
+    margin: 1rem 0 0;
   }
 
 
@@ -23,7 +30,7 @@ body {
     width: 100%;
     height: 3px;
     border-radius: 10rem;
-    background: linear-gradient(to right, black 0%, #ddd 60%, white 100%);
+    background: linear-gradient(to right, #444 0%, #ddd 50%, white 90%);
   }
 
   // thank you https://css-tricks.com/gradient-borders-in-css/
@@ -51,6 +58,46 @@ body {
     //   margin: -5px;
     //   background: linear-gradient(to right, black 40%, white 100%)
     // }
+
+    li {
+
+      &.gold-badge {
+        background-color: #f7cb4d;
+        color: black;
+      }
+  
+      &.blue-badge {
+        background-color: #5b95f9;
+        color: white;
+  
+        &.disabled {
+          background-color: #ccc;
+          color: #888;
+        }
+      }
+  
+      &.red-badge {
+        background-color: #ea4335;
+        color: white;
+  
+        &.disabled {
+          background-color: #ccc;
+          color: #888;
+        }
+      }
+
+
+      &.link-efa {
+        background-color: #e33e42;
+        color: white;
+      }
+
+
+      &.inverse {
+        background-color: #444;
+        color: white;
+      }
+    }
   }
 
 
@@ -111,11 +158,12 @@ body {
 
 #main-div {
   margin: 0 2rem;
+  
 }
 
 h1.page-title {
   font-size: 2.4rem;
-  margin: 1rem 0 0;
+  margin: 0 0;
 }
 
 h3.page-subtitle {
@@ -139,29 +187,65 @@ section#section-zoom {
 section#office-hours {
   
   img {
-    margin: 0.4rem;
+    margin: 0;
     padding: 0.4rem;
+  }
+}
+
+
+section#resources {
+  
+  .link {
+
+    &#link-learning-gym {
+      background-color: #e33e42;
+      color: white;
+    }
+
+    &#link-quicksilver {
+      background-color: #333333;
+      color: white;
+    }
+
+    &#link-faq {
+      background-color: #f9cb9c;
+      color: black;
+    }
   }
 }
 
 
 section#calendar {
 
-  li {
+  
+}
 
-    &#calendar-gold {
-      background-color: #f7cb4d;
-      color: black;
-    }
 
-    &#calendar-blue {
-      background-color: #5b95f9;
-      color: white;
-    }
 
-    &#calendar-red {
-      background-color: #ea4335;
-      color: white;
-    }
+
+
+
+
+
+
+
+#body-spacer {
+  flex-grow: 1
+}
+
+
+footer {
+  flex-grow: 0;
+  width: 100%;
+  height: 60px;
+  padding: 0 1rem;
+
+  text-align: right;
+  background: linear-gradient(to right, white 0%, white 30%, #444 80%);
+  // border-top-left-radius: 100%;
+  color: white;
+  
+  a {
+    color: white;
   }
 }
