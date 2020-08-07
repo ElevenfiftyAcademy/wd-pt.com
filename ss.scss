@@ -17,8 +17,29 @@ body {
   }
 
 
+  div.split {
+    margin: 0 0 0;
+    padding: 0;
+    width: 100%;
+    height: 3px;
+    border-radius: 10rem;
+    background: linear-gradient(to right, black 0%, #ddd 60%, white 100%);
+  }
+
   // thank you https://css-tricks.com/gradient-borders-in-css/
   section {
+
+    margin: 0 0 2rem;
+    padding: 0;
+
+    h2 {
+      margin: 0.4rem 0 0.4rem;
+    }
+
+    a {
+      text-decoration: none;
+    }
+    // border-top: 4px solid black;
     // background-clip: padding-box;
     // border: solid 5px transparent;
 
@@ -46,6 +67,8 @@ body {
       padding: 0.4rem;
 
       border-radius: 6px;
+
+      box-shadow: 2px 2px 0 black;
     }
   }
 }
@@ -109,5 +132,36 @@ section#section-zoom {
 
     background-color: #0e71eb;
     color: white;
+  }
+}
+
+
+section#office-hours {
+  
+  img {
+    margin: 0.4rem;
+    padding: 0.4rem;
+  }
+}
+
+
+section#calendar {
+
+  li {
+
+    &#calendar-gold {
+      background-color: #f7cb4d;
+      color: black;
+    }
+
+    &#calendar-blue {
+      background-color: #5b95f9;
+      color: white;
+    }
+
+    &#calendar-red {
+      background-color: #ea4335;
+      color: white;
+    }
   }
 }
