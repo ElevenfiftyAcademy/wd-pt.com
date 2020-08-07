@@ -63,6 +63,10 @@ body section li.inverse {
   background-color: #444;
   color: white;
 }
+body section li.badge-rainbow {
+  background: linear-gradient(to right, #f7cb4d, #5b95f9, #ea4335);
+  color: black;
+}
 body ul {
   margin: 0;
   padding: 0;

@@ -99,6 +99,12 @@ body {
         background-color: #444;
         color: white;
       }
+
+
+      &.badge-rainbow {
+        background: linear-gradient(to right, #f7cb4d, #5b95f9, #ea4335);
+        color: black;
+      }
     }
   }
 
