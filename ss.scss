@@ -29,7 +29,7 @@ body {
     padding: 0;
     width: 100%;
     height: 3px;
-    border-radius: 10rem;
+    //border-radius: 10rem;
     background: linear-gradient(to right, #444 0%, #ddd 50%, white 90%);
   }
 
@@ -37,10 +37,12 @@ body {
   section {
 
     margin: 0 0 2rem;
-    padding: 0;
+    padding: 0.4rem 0 0 0.8rem;
+
+    border-left: solid 3px #444;
 
     h2 {
-      margin: 0.4rem 0 0.4rem;
+      margin: 0 0 0.4rem;
     }
 
     a {
@@ -162,8 +164,14 @@ body {
 }
 
 h1.page-title {
-  font-size: 2.4rem;
+  font-size: 3rem;
   margin: 0 0;
+}
+
+@media (max-width: 600px) {
+  h1.page-title {
+    font-size: 2.4rem;
+  }
 }
 
 h3.page-subtitle {
@@ -207,7 +215,7 @@ section#resources {
       color: white;
     }
 
-    &#link-faq {
+    &.link-course {
       background-color: #f9cb9c;
       color: black;
     }
