@@ -1,0 +1,34 @@
+body {
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+#c {
+  width: 50rem;
+  height: 50rem;
+}
+
+.i {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.b {
+  height: 100%;
+  width: 20%;
+  background-color: #a4c2f4;
+}
+
+.g {
+  height: 100%;
+  width: 20%;
+  background-color: #b6d7a8;
+}
+
+.p {
+  height: 100%;
+  width: 20%;
+  background-color: #b4a7d6;
+}
