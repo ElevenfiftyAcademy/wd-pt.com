@@ -139,6 +139,10 @@ section#resources .link#link-learning-gym {
   background-color: #e33e42;
   color: white;
 }
+section#resources .link.link-help-queue {
+  background-color: white;
+  color: #e33e42;
+}
 section#resources .link#link-quicksilver {
   background-color: #333333;
   color: white;
